@@ -4,8 +4,9 @@ body{
   font-size: 1.2em;
 }
 
-button{
+button, input{
   font-size: 18px;
+  vertical-align: middle;
 }
 
 .js-table-wrapper{
@@ -33,4 +34,8 @@ button{
 
 .pull-right{
   float: right;
+}
+
+.text-center{
+  text-align: center;
 }

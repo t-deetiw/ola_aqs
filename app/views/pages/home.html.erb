@@ -1,0 +1,28 @@
+<h2>
+  Welcome to Ola Auto Queuing System
+</h2>
+<div>
+  <div>
+    <span> Visit Dashboard - </span>
+    <span>
+      <%= link_to("click here", dashboard_path) %>
+    </span>
+  </div>
+  <br><br>
+  <div>
+    <span> Visit Driver App </span>
+    <ul>
+    <% MAX_DRIVER_COUNT.times.each do |index| %>
+      <li>
+        <span>Driver <%= index + 1 %> - </span>
+        <span><%= link_to("click here", driverapp_path(id: index + 1)) %></span>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+  <br>
+  <div>
+    <span> Visit Customer App - </span>
+    <span><%= link_to("click here", customerapp_path) %></span>
+  </div
+</div>

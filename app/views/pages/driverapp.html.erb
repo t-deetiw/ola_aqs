@@ -1,2 +1,23 @@
+<h1>
+  <span>Driver App: Driver Id: <%=params[:id] %></span>
+  <span class="pull-right"><button>Refresh</button></span>
+</h1>
+<br>
+
+<div class="js-table-wrapper js-driver-info">
+  <table>
+    <thead>
+      <tr>
+        <% RideRequest::Status.each do |status| %>
+         <th><%= status.to_s.capitalize %></th>
+        <%end %>
+      </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<br>
 
 <%= javascript_include_tag 'driverapp' %>

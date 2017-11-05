@@ -8,7 +8,7 @@ button{
   font-size: 18px;
 }
 
-.js-ride-details{
+.js-table-wrapper{
   table {
     text-align: center;
     width: 100%;
@@ -17,9 +17,17 @@ button{
      border: 1px solid grey;
      border-spacing: 5px;
   }
+}
 
+.js-ride-list{
   & th, td {
     width: 20%;
+  }
+}
+
+.js-driver-info{
+  & th, td {
+    width: 33%;
   }
 }
 

@@ -1,0 +1,3 @@
+class RideRequest < ApplicationRecord
+
+end

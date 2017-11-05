@@ -1,6 +1,7 @@
 body{
   width: 80%;
   margin-left: 10%;
+  font-size: 1.2em;
 }
 
 button{
@@ -11,8 +12,6 @@ button{
   table {
     text-align: center;
     width: 100%;
-    height: auto;
-    font-size: 1.3em;
   }
   & table, th, td {
      border: 1px solid grey;

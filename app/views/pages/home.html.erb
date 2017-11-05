@@ -12,10 +12,10 @@
   <div>
     <span> Visit Driver App </span>
     <ul>
-    <% MAX_DRIVER_COUNT.times.each do |index| %>
+    <% Driver.limit(MAX_DRIVER_COUNT).each do |driver| %>
       <li>
-        <span>Driver <%= index + 1 %> - </span>
-        <span><%= link_to("click here", driverapp_path(id: index + 1)) %></span>
+        <span>Driver <%= driver.id %> - </span>
+        <span><%= link_to("click here", driverapp_path(id: driver.id)) %></span>
       </li>
     <% end %>
     </ul>
